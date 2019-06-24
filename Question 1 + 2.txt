@@ -1,0 +1,33 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//string format
+		/*
+		Console.WriteLine("Enter a number: ");
+		int number = int.Parse(Console.ReadLine());
+		Console.WriteLine("normal: {0}",number);
+		Console.WriteLine("currency: {0:c}",number);
+		Console.WriteLine("whole: {0:d}",number);
+		Console.WriteLine("3 decimal digits: {0:f3}",number);
+		Console.WriteLine("percentage: {0:p}",number);
+		Console.WriteLine("hexadecimal: {0:x}",number);
+		*/
+		
+		//string reversal
+		Console.WriteLine("Please enter some text to reverse it: ");
+		string text = Console.ReadLine();
+		char[] reverseText = new char[text.Length];
+		
+		for(int counter = 0; counter < text.Length;counter++)
+		{
+			reverseText[text.Length - 1 - counter] = text[counter];
+		}
+		Console.WriteLine("Input: ");
+		Console.WriteLine(text);
+		Console.WriteLine("Reversed: ");
+		Console.WriteLine(reverseText);
+	}
+}
